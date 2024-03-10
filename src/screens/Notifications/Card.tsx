@@ -1,11 +1,17 @@
 import {View, Text, Image, ImageSourcePropType} from 'react-native';
 import React from 'react';
 import {cardStyles} from './Card-styles';
+import TimeAgo from 'javascript-time-ago';
+// English.
+import en from 'javascript-time-ago/locale/en';
+
+TimeAgo.addDefaultLocale(en);
 
 interface ICardProps {
   imageType: string;
   message: string;
-  timeago: string;
+  time: Date | number;
+  completed: boolean;
 }
 
 const images = {
@@ -14,18 +20,26 @@ const images = {
   'D-Active': require('../../assets/images/D-Active.png'),
 };
 
-const Card = ({imageType, message, timeago}: ICardProps) => {
+const Card = ({imageType, message, time, completed}: ICardProps) => {
+  const timeAgo = new TimeAgo('en-US');
+  let timeStr = timeAgo.format(time);
   return (
-    <View style={cardStyles.container}>
+    <View
+      style={[
+        cardStyles.container,
+        completed ? cardStyles.completedCard : null,
+      ]}>
       <View style={cardStyles.card}>
         <Image
           source={images[imageType as keyof typeof images]}
           style={cardStyles.image}
         />
-        <Text style={cardStyles.message}>{message}</Text>
+        <View style={cardStyles.messageContainer}>
+          <Text style={cardStyles.message}>{message}</Text>
+        </View>
       </View>
       <View style={cardStyles.timeAgoContainer}>
-        <Text style={cardStyles.timeAgoText}>{timeago}</Text>
+        <Text style={cardStyles.timeAgoText}>{timeStr}</Text>
       </View>
     </View>
   );

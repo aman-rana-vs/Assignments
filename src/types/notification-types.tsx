@@ -6,5 +6,6 @@ export enum imageTypes {
 export interface INotification {
   imageType: imageTypes;
   MessageType: string;
-  timeAgo: string;
+  time: Date | number;
+  completed: boolean;
 }

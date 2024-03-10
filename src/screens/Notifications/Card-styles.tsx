@@ -6,10 +6,13 @@ export const cardStyles = StyleSheet.create({
   container: {
     paddingVertical: 17,
     paddingHorizontal: 20,
-    width: 375,
+    width: 390,
     gap: 4,
     borderWidth: 0.7,
     borderColor: '#E2E8EB',
+  },
+  completedCard: {
+    backgroundColor: NOTIFICATION_COLORS.NOTIFICATION_COMPLETED,
   },
   card: {
     flexDirection: 'row',
@@ -20,14 +23,16 @@ export const cardStyles = StyleSheet.create({
     height: 48,
     width: 48,
   },
-  message: {
+  messageContainer: {
     height: 48,
     width: 259,
+    justifyContent: 'center',
+  },
+  message: {
     fontFamily: FONTS.QUICKSAND_MEDIUM,
     fontSize: 14,
     lineHeight: 16.8,
     color: NOTIFICATION_COLORS.CARD.Message,
-    alignSelf: 'center',
   },
   timeAgoContainer: {
     paddingHorizontal: 76,

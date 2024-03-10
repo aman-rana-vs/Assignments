@@ -14,7 +14,8 @@ const renderFunction = (item: INotification): JSX.Element => {
     <Card
       imageType={item.imageType}
       message={item.MessageType}
-      timeago={item.timeAgo}
+      time={item.time}
+      completed={item.completed}
     />
   );
 };

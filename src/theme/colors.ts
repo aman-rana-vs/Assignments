@@ -10,4 +10,5 @@ export const NOTIFICATION_COLORS = {
   TOP_NAV: {
     Heading: '#292F36',
   },
+  NOTIFICATION_COMPLETED: '#F1FCFA',
 };
