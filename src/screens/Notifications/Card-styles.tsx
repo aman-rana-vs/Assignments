@@ -6,7 +6,10 @@ export const cardStyles = StyleSheet.create({
   container: {
     paddingVertical: 17,
     paddingHorizontal: 20,
+    width: 375,
     gap: 4,
+    borderWidth: 0.7,
+    borderColor: '#E2E8EB',
   },
   card: {
     flexDirection: 'row',

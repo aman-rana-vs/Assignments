@@ -1,7 +1,10 @@
 import {View, Text, FlatList} from 'react-native';
 import React from 'react';
 import Card from './Card';
-import {NOTIFICATIONS_DATA, EMPTY_DATA} from '../../constants/app-data';
+import {
+  NOTIFICATIONS_DATA,
+  EMPTY_DATA,
+} from '../../constants/notifications-data';
 import {INotification} from '../../types/notification-types';
 import TopNav from './TopNav';
 import EmptyNotification from './EmptyNotification';
@@ -17,10 +20,7 @@ const renderFunction = (item: INotification): JSX.Element => {
 };
 const Notifications = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-      }}>
+    <View>
       <TopNav />
       <FlatList
         showsVerticalScrollIndicator={false}
