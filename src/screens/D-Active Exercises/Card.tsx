@@ -25,8 +25,8 @@ const Card = ({title, image}: ICardProps) => {
         <LinearGradient
           colors={[
             'rgba(255, 255, 255, 0.56)',
-            'rgba(255, 255, 255, 0.12)',
-            'rgba(255, 255, 255, 0)',
+            'rgba(255, 255, 255, 0.5)',
+            'rgba(255, 255, 255, 0.5)',
           ]}
           style={cardStyles.headingContainer}>
           <Text style={cardStyles.heading}>{title}</Text>

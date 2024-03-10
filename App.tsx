@@ -5,7 +5,7 @@ import Notifications from './src/screens/Notifications/Notifications';
 import DActiveExercises from './src/screens/D-Active Exercises/DActiveExercises';
 
 const App = () => {
-  const FLAG = true;
+  const FLAG = false;
   return (
     <View style={{alignItems: 'center'}}>
       {FLAG ? <Notifications /> : <DActiveExercises />}

@@ -7,6 +7,7 @@ export const cardStyles = StyleSheet.create({
     justifyContent: 'space-between',
     borderRadius: 16,
     elevation: 5,
+    overflow: 'hidden',
   },
   imageBackground: {
     flex: 1,
