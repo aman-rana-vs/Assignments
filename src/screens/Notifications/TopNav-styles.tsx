@@ -1,8 +1,13 @@
-import {StyleSheet} from 'react-native';
+import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
-import {NOTIFICATION_COLORS} from '../../theme/colors';
+import {NOTIFICATION_COLORS, TOP_NAV} from '../../theme/colors';
 
-export const topNavStyles = StyleSheet.create({
+interface ITopNavStyles {
+  container: ViewStyle;
+  heading: TextStyle;
+  settingsIcon: ImageStyle;
+}
+export const topNavStyles: ITopNavStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     height: 56,
@@ -14,7 +19,7 @@ export const topNavStyles = StyleSheet.create({
   heading: {
     fontFamily: FONTS.FRAUNCES_BOLD,
     fontSize: 18,
-    color: NOTIFICATION_COLORS.TOP_NAV.Heading,
+    color: TOP_NAV.Heading,
     lineHeight: 25.2,
     gap: 16,
     width: 247,

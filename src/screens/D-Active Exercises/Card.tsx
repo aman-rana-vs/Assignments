@@ -15,6 +15,14 @@ const imageTypes = {
   scan: require(`../../assets/images/scan.png`),
   square: require(`../../assets/images/square.png`),
 };
+
+const colorTypes = {
+  outer: cardStyles.outerText,
+  focus: cardStyles.focusText,
+  follow: cardStyles.followText,
+  scan: cardStyles.scanText,
+  square: cardStyles.squareText,
+};
 const Card = ({title, image}: ICardProps) => {
   return (
     <View style={cardStyles.mainContainer}>
@@ -26,10 +34,16 @@ const Card = ({title, image}: ICardProps) => {
           colors={[
             'rgba(255, 255, 255, 0.56)',
             'rgba(255, 255, 255, 0.5)',
-            'rgba(255, 255, 255, 0.5)',
+            'rgba(255, 255, 255, 0.1)',
           ]}
           style={cardStyles.headingContainer}>
-          <Text style={cardStyles.heading}>{title}</Text>
+          <Text
+            style={[
+              cardStyles.heading,
+              colorTypes[image as keyof typeof colorTypes],
+            ]}>
+            {title}
+          </Text>
         </LinearGradient>
         <LinearGradient
           colors={['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.8)']}

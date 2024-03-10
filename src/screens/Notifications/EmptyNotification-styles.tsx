@@ -1,8 +1,16 @@
-import {StyleSheet} from 'react-native';
+import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
 import {NOTIFICATION_COLORS} from '../../theme/colors';
 
-export const EmptyNotStyles = StyleSheet.create({
+interface IEmptyNotStyles {
+  mainContainer: ViewStyle;
+  subContainer: ViewStyle;
+  icon: ImageStyle;
+  textContainer: ViewStyle;
+  heading: TextStyle;
+  message: TextStyle;
+}
+export const EmptyNotStyles: IEmptyNotStyles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     justifyContent: 'center',

@@ -1,15 +1,25 @@
-import {StyleSheet} from 'react-native';
+import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
 import {NOTIFICATION_COLORS} from '../../theme/colors';
 
-export const cardStyles = StyleSheet.create({
+interface ICardStyles {
+  container: ViewStyle;
+  completedCard: ViewStyle;
+  card: ViewStyle;
+  image: ImageStyle;
+  messageContainer: ViewStyle;
+  message: TextStyle;
+  timeAgoContainer: ViewStyle;
+  timeAgoText: TextStyle;
+}
+export const cardStyles: ICardStyles = StyleSheet.create({
   container: {
     paddingVertical: 17,
     paddingHorizontal: 20,
     width: 390,
     gap: 4,
     borderWidth: 0.7,
-    borderColor: '#E2E8EB',
+    borderColor: NOTIFICATION_COLORS.CARD.BorderColor,
   },
   completedCard: {
     backgroundColor: NOTIFICATION_COLORS.NOTIFICATION_COMPLETED,

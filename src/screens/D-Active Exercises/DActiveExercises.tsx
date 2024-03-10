@@ -16,11 +16,11 @@ const DActiveExercises = () => {
       .catch(e => console.log(e.message));
   }, []);
   return (
-    <View>
+    <View style={{width: 385, alignItems: 'center', gap: 10}}>
       <TopNav />
       <FlatList
         data={D_ACTIVE_DATA}
-        contentContainerStyle={{width: 335, gap: 20}}
+        contentContainerStyle={{width: 335, gap: 20, paddingBottom: 150}}
         renderItem={({item}) => renderFunction(item)}
         showsVerticalScrollIndicator={false}
       />
