@@ -16,28 +16,28 @@ export const NOTIFICATIONS_DATA: Array<INotification> = [
     completed: true,
   },
   {
-    imageType: imageTypes.REFLECTION,
+    imageType: imageTypes.REMINDER,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: Date.now() - 60 * 60 * 1000,
     completed: false,
   },
   {
-    imageType: imageTypes.REFLECTION,
+    imageType: imageTypes.REMINDER,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: Date.now() - 24 * 60 * 60 * 1000,
     completed: false,
   },
   {
-    imageType: imageTypes.REFLECTION,
+    imageType: imageTypes.D_ACTIVE,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: Date.now() - 3 * 24 * 60 * 60 * 1000,
     completed: false,
   },
   {
-    imageType: imageTypes.REFLECTION,
+    imageType: imageTypes.D_ACTIVE,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: Date.now() - 30 * 24 * 60 * 60 * 1000,

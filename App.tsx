@@ -8,6 +8,7 @@ const App = () => {
   const FLAG = true;
   return (
     <View style={{alignItems: 'center'}}>
+      <StatusBar backgroundColor="white" barStyle="dark-content" />
       {FLAG ? <Notifications /> : <DActiveExercises />}
     </View>
   );
