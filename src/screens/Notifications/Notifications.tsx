@@ -7,7 +7,7 @@ import {
 } from '../../constants/notifications-constants';
 import {INotification} from '../../types/notification-types';
 import TopNav from './NotificationHeader';
-import EmptyNotification from './EmptyNotification';
+import EmptyNotification from './EmptyData';
 
 const renderFunction = (item: INotification): JSX.Element => {
   return (

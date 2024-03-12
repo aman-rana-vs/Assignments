@@ -5,10 +5,7 @@ import {topNavStyles} from './NotificationHeader-styles';
 const TopNav = () => {
   return (
     <View style={topNavStyles.container}>
-      <Image
-        style={topNavStyles.settingsIcon}
-        source={require('../../assets/icons/empty.png')}
-      />
+      <View style={topNavStyles.settingsIcon} />
       <Text style={topNavStyles.heading}>Notifications</Text>
       <Image
         style={topNavStyles.settingsIcon}

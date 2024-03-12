@@ -5,11 +5,11 @@ import Notifications from './src/screens/Notifications/Notifications';
 import DActiveExercises from './src/screens/D-Active Exercises/DActiveExercises';
 
 const App = () => {
-  const FLAG = true;
+  const showNotificationScreen = false;
   return (
     <View style={{flex: 1, alignItems: 'center'}}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
-      {FLAG ? <Notifications /> : <DActiveExercises />}
+      {showNotificationScreen ? <Notifications /> : <DActiveExercises />}
     </View>
   );
 };

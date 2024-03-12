@@ -5,6 +5,7 @@ import Card from './DactiveCard';
 import {ID_ACTIVE} from '../../types/d-active-types';
 import {DActiveStyles} from './DActiveExercises-styles';
 import {D_ACTIVE_API_URL} from '../../constants/dactive-constants';
+import {fetchDactiveData} from '../../services/get-dactive-data';
 
 const renderFunction = (item: ID_ACTIVE): JSX.Element => {
   return <Card title={item.title} image={item.image} />;
@@ -15,10 +16,7 @@ const DActiveExercises = () => {
   // start the json-server first to fetch the data from mock api
   // "npx json-server src/constants/d-active-db.json"
   useEffect(() => {
-    fetch(D_ACTIVE_API_URL)
-      .then(res => res.json())
-      .then(data => SET_D_ACTIVE_DATA(data))
-      .catch(e => console.log(e.message));
+    fetchDactiveData(SET_D_ACTIVE_DATA);
   }, []);
   return (
     <View style={DActiveStyles.mainContainer}>

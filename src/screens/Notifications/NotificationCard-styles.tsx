@@ -17,7 +17,7 @@ export const cardStyles: ICardStyles = StyleSheet.create({
   container: {
     borderColor: COLORS.neutral100,
     borderWidth: 0.7,
-    flex: 1,
+    flex: SPACING.space_1,
     gap: SPACING.space_4,
     paddingHorizontal: SPACING.space_20,
     paddingVertical: SPACING.space_16,
@@ -35,7 +35,7 @@ export const cardStyles: ICardStyles = StyleSheet.create({
     width: SPACING.space_48,
   },
   messageContainer: {
-    flex: 1,
+    flex: SPACING.space_1,
     height: SPACING.space_48,
     justifyContent: 'center',
   },
@@ -54,6 +54,6 @@ export const cardStyles: ICardStyles = StyleSheet.create({
     fontSize: SPACING.space_12,
     height: SPACING.space_18,
     lineHeight: SPACING.space_18,
-    width: 183,
+    width: SPACING.space_183,
   },
 });

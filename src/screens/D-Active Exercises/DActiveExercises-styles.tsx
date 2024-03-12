@@ -10,6 +10,6 @@ export const DActiveStyles = StyleSheet.create({
   listContainer: {
     gap: SPACING.space_20,
     paddingBottom: SPACING.space_20,
-    width: 335,
+    width: SPACING.space_335,
   },
 });

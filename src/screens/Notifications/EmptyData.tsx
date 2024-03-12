@@ -1,6 +1,6 @@
 import {View, Text, Image} from 'react-native';
 import React from 'react';
-import {EmptyNotStyles} from './EmptyNotification-styles';
+import {EmptyNotStyles} from './EmptyData-styles';
 
 const EmptyNotification = () => {
   return (

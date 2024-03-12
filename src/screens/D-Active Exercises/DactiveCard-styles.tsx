@@ -18,14 +18,14 @@ interface ICardStyles {
 export const cardStyles: ICardStyles = StyleSheet.create({
   mainContainer: {
     borderRadius: SPACING.space_16,
-    elevation: 5,
+    elevation: SPACING.space_5,
     height: SPACING.space_148,
     justifyContent: 'space-between',
     overflow: 'hidden',
   },
   imageBackground: {
     borderRadius: SPACING.space_16,
-    flex: 1,
+    flex: SPACING.space_1,
     justifyContent: 'space-between',
     overflow: 'hidden',
   },
@@ -42,7 +42,7 @@ export const cardStyles: ICardStyles = StyleSheet.create({
   buttonsContainer: {
     flexDirection: 'row',
     gap: SPACING.space_12,
-    height: 60,
+    height: SPACING.space_60,
     paddingHorizontal: SPACING.space_16,
     paddingVertical: SPACING.space_8,
   },
