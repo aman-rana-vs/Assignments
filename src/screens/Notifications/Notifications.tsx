@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text, FlatList} from 'react-native';
 
-import Card from './NotificationCard';
+import Card from '../../components/notification-card/NotificationCard';
 import TopNav from './NotificationHeader';
-import EmptyNotification from './EmptyData';
+import EmptyNotification from '../../components/empty-data/EmptyData';
 import {INotification} from '../../types/notification-types';
 
 import {

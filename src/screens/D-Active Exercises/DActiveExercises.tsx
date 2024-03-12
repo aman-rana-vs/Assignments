@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {View, Text, FlatList} from 'react-native';
 
 import TopNav from './DactiveHeader';
-import Card from './DactiveCard';
+import Card from '../../components/d-active-card/DactiveCard';
 import {ID_ACTIVE} from '../../types/d-active-types';
 import {fetchDactiveData} from '../../services/get-dactive-data';
 

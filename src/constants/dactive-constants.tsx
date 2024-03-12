@@ -1,4 +1,4 @@
-import {cardStyles} from '../screens/D-Active Exercises/DactiveCard-styles';
+import {cardStyles} from '../components/d-active-card/DactiveCard-styles';
 
 export const imageTypes = {
   outer: require(`../assets/images/outer.png`),
@@ -8,7 +8,7 @@ export const imageTypes = {
   square: require(`../assets/images/square.png`),
 };
 
-export const colorTypes = {
+export const titleColors = {
   outer: cardStyles.outerText,
   focus: cardStyles.focusText,
   follow: cardStyles.followText,

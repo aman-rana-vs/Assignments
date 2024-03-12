@@ -11,68 +11,61 @@ const TimeStamps = {
   Time3DayAgo: currTimeStamp - 3 * 24 * 60 * 60 * 1000,
   Time1MonthAgo: currTimeStamp - 30 * 24 * 60 * 60 * 1000,
 };
+const messageTxt =
+  'Reminder of the day Unlocked Complete exercises for bonus points!';
 
 export const NOTIFICATIONS_DATA: Array<INotification> = [
   {
     imageType: imageTypes.REFLECTION,
-    MessageType:
-      'Reminder of the day Unlocked Complete exercises for bonus points!',
+    MessageType: messageTxt,
     time: TimeStamps.currentTime,
     isCompleted: true,
   },
   {
     imageType: imageTypes.REFLECTION,
-    MessageType:
-      'Reminder of the day Unlocked Complete exercises for bonus points!',
+    MessageType: messageTxt,
     time: TimeStamps.Time2MinAgo,
     isCompleted: true,
   },
   {
     imageType: imageTypes.REMINDER,
-    MessageType:
-      'Reminder of the day Unlocked Complete exercises for bonus points!',
+    MessageType: messageTxt,
     time: TimeStamps.Time1HrAgo,
     isCompleted: false,
   },
   {
     imageType: imageTypes.REMINDER,
-    MessageType:
-      'Reminder of the day Unlocked Complete exercises for bonus points!',
+    MessageType: messageTxt,
     time: TimeStamps.Time2HrAgo,
     isCompleted: false,
   },
   {
     imageType: imageTypes.D_ACTIVE,
-    MessageType:
-      'Reminder of the day Unlocked Complete exercises for bonus points!',
+    MessageType: messageTxt,
     time: TimeStamps.Time1DayAgo,
     isCompleted: false,
   },
   {
     imageType: imageTypes.D_ACTIVE,
-    MessageType:
-      'Reminder of the day Unlocked Complete exercises for bonus points!',
+    MessageType: messageTxt,
     time: TimeStamps.Time1DayAgo,
     isCompleted: false,
   },
   {
     imageType: imageTypes.REFLECTION,
-    MessageType:
-      'Reminder of the day Unlocked Complete exercises for bonus points!',
+    MessageType: messageTxt,
     time: TimeStamps.Time3DayAgo,
     isCompleted: false,
   },
   {
     imageType: imageTypes.REFLECTION,
-    MessageType:
-      'Reminder of the day Unlocked Complete exercises for bonus points!',
+    MessageType: messageTxt,
     time: TimeStamps.Time1MonthAgo,
     isCompleted: false,
   },
   {
     imageType: imageTypes.REFLECTION,
-    MessageType:
-      'Reminder of the day Unlocked Complete exercises for bonus points!',
+    MessageType: messageTxt,
     time: TimeStamps.Time1MonthAgo,
     isCompleted: false,
   },

@@ -1,11 +1,15 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, TextStyle, ViewStyle} from 'react-native';
 
-import {FONTS} from '../theme/typography';
-import {COLORS} from '../theme/colors';
-import {SPACING} from '../theme/theme';
+import {FONTS} from '../../theme/typography';
+import {COLORS} from '../../theme/colors';
+import {SPACING} from '../../theme/theme';
 
-export const buttonStyles = StyleSheet.create({
-  buttonContainer: {
+interface IButtonStyles {
+  container: ViewStyle;
+  buttonText: TextStyle;
+}
+export const buttonStyles: IButtonStyles = StyleSheet.create({
+  container: {
     alignItems: 'center',
     backgroundColor: COLORS.neutralWhite,
     borderRadius: SPACING.space_8,

@@ -2,11 +2,10 @@ import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-import Button from '../../components/Button';
-
+import CustomButton from '../custom-button/CustomButton';
 import {
   LINEAR_GRADIENTS,
-  colorTypes,
+  titleColors,
   imageTypes,
 } from '../../constants/dactive-constants';
 
@@ -20,18 +19,18 @@ interface ICardProps {
 const Card = (props: ICardProps) => {
   const {title, image} = props;
   return (
-    <View style={cardStyles.mainContainer}>
+    <View style={cardStyles.container}>
       <ImageBackground
-        style={cardStyles.imageBackground}
+        style={cardStyles.backgroundImage}
         source={imageTypes[image as keyof typeof imageTypes]}
         resizeMode="cover">
         <LinearGradient
           colors={LINEAR_GRADIENTS.gradient1}
-          style={cardStyles.headingContainer}>
+          style={cardStyles.titleContainer}>
           <Text
             style={[
-              cardStyles.heading,
-              colorTypes[image as keyof typeof colorTypes],
+              cardStyles.title,
+              titleColors[image as keyof typeof titleColors],
             ]}>
             {title}
           </Text>
@@ -39,9 +38,9 @@ const Card = (props: ICardProps) => {
         <LinearGradient
           colors={LINEAR_GRADIENTS.gradient2}
           style={cardStyles.buttonsContainer}>
-          <Button time="2min" />
-          <Button time="4min" />
-          <Button time="8min" />
+          <CustomButton time="2min" />
+          <CustomButton time="4min" />
+          <CustomButton time="8min" />
         </LinearGradient>
       </ImageBackground>
     </View>
