@@ -17,34 +17,34 @@ interface ICardStyles {
 }
 export const cardStyles: ICardStyles = StyleSheet.create({
   mainContainer: {
-    height: SPACING.space_148,
-    justifyContent: 'space-between',
     borderRadius: SPACING.space_16,
     elevation: 5,
+    height: SPACING.space_148,
+    justifyContent: 'space-between',
     overflow: 'hidden',
   },
   imageBackground: {
+    borderRadius: SPACING.space_16,
     flex: 1,
     justifyContent: 'space-between',
-    borderRadius: SPACING.space_16,
     overflow: 'hidden',
   },
   headingContainer: {
-    paddingVertical: SPACING.space_8,
-    paddingHorizontal: SPACING.space_16,
     alignItems: 'center',
+    paddingHorizontal: SPACING.space_16,
+    paddingVertical: SPACING.space_8,
   },
   heading: {
-    textAlign: 'center',
     fontFamily: FONTS.FRAUNCES_BOLD,
     fontSize: SPACING.space_18,
+    textAlign: 'center',
   },
   buttonsContainer: {
     flexDirection: 'row',
-    height: 60,
-    paddingVertical: SPACING.space_8,
-    paddingHorizontal: SPACING.space_16,
     gap: SPACING.space_12,
+    height: 60,
+    paddingHorizontal: SPACING.space_16,
+    paddingVertical: SPACING.space_8,
   },
 
   outerText: {

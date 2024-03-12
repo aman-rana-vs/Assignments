@@ -3,7 +3,11 @@ import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import {cardStyles} from './DactiveCard-styles';
 import Button from '../../components/Button';
-import {colorTypes, imageTypes} from '../../constants/dactive-constants';
+import {
+  LINEAR_GRADIENTS,
+  colorTypes,
+  imageTypes,
+} from '../../constants/dactive-constants';
 
 interface ICardProps {
   title: string;
@@ -19,11 +23,7 @@ const Card = (props: ICardProps) => {
         source={imageTypes[image as keyof typeof imageTypes]}
         resizeMode="cover">
         <LinearGradient
-          colors={[
-            'rgba(255, 255, 255, 0.56)',
-            'rgba(255, 255, 255, 0.5)',
-            'rgba(255, 255, 255, 0.1)',
-          ]}
+          colors={LINEAR_GRADIENTS.gradient1}
           style={cardStyles.headingContainer}>
           <Text
             style={[
@@ -34,7 +34,7 @@ const Card = (props: ICardProps) => {
           </Text>
         </LinearGradient>
         <LinearGradient
-          colors={['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.8)']}
+          colors={LINEAR_GRADIENTS.gradient2}
           style={cardStyles.buttonsContainer}>
           <Button time="2min" />
           <Button time="4min" />

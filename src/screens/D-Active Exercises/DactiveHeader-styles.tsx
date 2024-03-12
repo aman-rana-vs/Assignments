@@ -1,6 +1,7 @@
 import {StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
 import {TOP_NAV} from '../../theme/colors';
+import {SPACING} from '../../theme/theme';
 
 type TTopNavStyles = {
   container: ViewStyle;
@@ -8,17 +9,17 @@ type TTopNavStyles = {
 };
 export const topnavStyles: TTopNavStyles = StyleSheet.create({
   container: {
-    height: 56,
-    paddingVertical: 16,
-    paddingHorizontal: 24,
-    gap: 16,
     alignItems: 'center',
+    gap: SPACING.space_16,
+    height: 56,
+    paddingHorizontal: SPACING.space_24,
+    paddingVertical: SPACING.space_16,
     width: 375,
   },
   text: {
-    fontFamily: FONTS.FRAUNCES_BOLD,
-    textAlign: 'center',
-    fontSize: 18,
     color: TOP_NAV.Heading,
+    fontFamily: FONTS.FRAUNCES_BOLD,
+    fontSize: SPACING.space_18,
+    textAlign: 'center',
   },
 });

@@ -1,6 +1,7 @@
 import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
 import {NOTIFICATION_COLORS} from '../../theme/colors';
+import {SPACING} from '../../theme/theme';
 
 interface IEmptyNotStyles {
   mainContainer: ViewStyle;
@@ -22,8 +23,8 @@ export const EmptyNotStyles: IEmptyNotStyles = StyleSheet.create({
     width: 335,
   },
   icon: {
-    height: 154,
-    width: 154,
+    height: SPACING.space_154,
+    width: SPACING.space_154,
   },
   heading: {
     fontFamily: FONTS.FRAUNCES_BOLD,
@@ -39,6 +40,6 @@ export const EmptyNotStyles: IEmptyNotStyles = StyleSheet.create({
     color: NOTIFICATION_COLORS.EMPTY_NOTIFICATIONS.Message,
   },
   textContainer: {
-    gap: 8,
+    gap: SPACING.space_8,
   },
 });

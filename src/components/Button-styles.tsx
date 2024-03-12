@@ -4,22 +4,22 @@ import {BUTTON_COLORS} from '../theme/colors';
 
 export const buttonStyles = StyleSheet.create({
   buttonContainer: {
-    height: 36,
-    flex: 1,
-    borderRadius: 8,
-    backgroundColor: BUTTON_COLORS.buttonBackground,
-    paddingVertical: 12,
-    paddingHorizontal: 16,
     alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
+    backgroundColor: BUTTON_COLORS.buttonBackground,
+    borderRadius: 8,
     elevation: 10,
+    flex: 1,
+    gap: 8,
+    height: 36,
+    justifyContent: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
   },
   buttonText: {
+    color: BUTTON_COLORS.buttonText,
+    fontFamily: FONTS.QUICKSAND_SEMIBOLD,
+    fontSize: 12,
     height: 18,
     width: 30,
-    fontSize: 12,
-    fontFamily: FONTS.QUICKSAND_SEMIBOLD,
-    color: BUTTON_COLORS.buttonText,
   },
 });
