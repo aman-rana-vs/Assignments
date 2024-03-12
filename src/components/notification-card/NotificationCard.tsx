@@ -27,7 +27,7 @@ const Card = (props: ICardProps) => {
         cardStyles.container,
         completed ? cardStyles.completedCard : null,
       ]}>
-      <View style={cardStyles.card}>
+      <View style={cardStyles.subContainer}>
         <Image
           source={images[imageType as keyof typeof images]}
           style={cardStyles.image}

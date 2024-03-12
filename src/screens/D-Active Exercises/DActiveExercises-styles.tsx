@@ -1,8 +1,12 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, ViewStyle} from 'react-native';
 import {SPACING} from '../../theme/theme';
 
+interface IDActiveStyles {
+  container: ViewStyle;
+  listContainer: ViewStyle;
+}
 export const DActiveStyles = StyleSheet.create({
-  mainContainer: {
+  container: {
     alignItems: 'center',
     flex: 1,
     gap: SPACING.space_10,

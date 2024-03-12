@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, FlatList} from 'react-native';
+import {View, FlatList} from 'react-native';
 
 import Card from '../../components/notification-card/NotificationCard';
 import TopNav from './NotificationHeader';

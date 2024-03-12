@@ -7,7 +7,7 @@ import {SPACING} from '../../theme/theme';
 interface ICardStyles {
   container: ViewStyle;
   completedCard: ViewStyle;
-  card: ViewStyle;
+  subContainer: ViewStyle;
   image: ImageStyle;
   messageContainer: ViewStyle;
   message: TextStyle;
@@ -26,7 +26,7 @@ export const cardStyles: ICardStyles = StyleSheet.create({
   completedCard: {
     backgroundColor: COLORS.primary50,
   },
-  card: {
+  subContainer: {
     alignItems: 'center',
     flexDirection: 'row',
     gap: SPACING.space_20,

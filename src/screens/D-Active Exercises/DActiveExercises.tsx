@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, FlatList} from 'react-native';
+import {View, FlatList} from 'react-native';
 
 import TopNav from './DactiveHeader';
 import Card from '../../components/d-active-card/DactiveCard';
@@ -14,13 +14,12 @@ const renderFunction = (item: ID_ACTIVE): JSX.Element => {
 const DActiveExercises = () => {
   const [D_ACTIVE_DATA, SET_D_ACTIVE_DATA] = useState([]);
 
-  // start the json-server first to fetch the data from mock api
-  // "npx json-server src/constants/d-active-db.json"
   useEffect(() => {
     fetchDactiveData(SET_D_ACTIVE_DATA);
   }, []);
+
   return (
-    <View style={DActiveStyles.mainContainer}>
+    <View style={DActiveStyles.container}>
       <TopNav />
       <FlatList
         data={D_ACTIVE_DATA}

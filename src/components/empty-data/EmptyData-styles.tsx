@@ -4,16 +4,16 @@ import {FONTS} from '../../theme/typography';
 import {SPACING} from '../../theme/theme';
 import {COLORS} from '../../theme/colors';
 
-interface IEmptyNotStyles {
-  mainContainer: ViewStyle;
+interface IEmptyDataStyles {
+  container: ViewStyle;
   subContainer: ViewStyle;
   icon: ImageStyle;
   textContainer: ViewStyle;
   heading: TextStyle;
   message: TextStyle;
 }
-export const EmptyNotStyles: IEmptyNotStyles = StyleSheet.create({
-  mainContainer: {
+export const emptyDataStyles: IEmptyDataStyles = StyleSheet.create({
+  container: {
     alignItems: 'center',
     flex: 1,
     justifyContent: 'center',
