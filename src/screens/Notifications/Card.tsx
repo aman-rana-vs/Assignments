@@ -1,9 +1,9 @@
 import {View, Text, Image, ImageSourcePropType} from 'react-native';
 import React from 'react';
-import {cardStyles} from './Card-styles';
 import TimeAgo from 'javascript-time-ago';
 // English.
 import en from 'javascript-time-ago/locale/en';
+import {cardStyles} from './Card-styles';
 
 TimeAgo.addDefaultLocale(en);
 
@@ -15,9 +15,9 @@ interface ICardProps {
 }
 
 const images = {
-  Reflection: require('../../assets/images/Reflection.png'),
-  Reminder: require('../../assets/images/Reminder.png'),
-  'D-Active': require('../../assets/images/D-Active.png'),
+  Reflection: require('../../assets/icons/reflection.png'),
+  Reminder: require('../../assets/icons/reminder.png'),
+  'D-Active': require('../../assets/icons/dactive.png'),
 };
 
 const Card = ({imageType, message, time, completed}: ICardProps) => {

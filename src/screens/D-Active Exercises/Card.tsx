@@ -1,7 +1,7 @@
 import {View, Text, ImageBackground} from 'react-native';
 import React from 'react';
-import {cardStyles} from './Card-styles';
 import LinearGradient from 'react-native-linear-gradient';
+import {cardStyles} from './Card-styles';
 import Button from '../../components/Button';
 
 interface ICardProps {

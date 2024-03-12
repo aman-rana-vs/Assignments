@@ -8,7 +8,7 @@ const EmptyNotification = () => {
       <View style={EmptyNotStyles.subContainer}>
         <Image
           style={EmptyNotStyles.icon}
-          source={require('../../assets/images/No-Notifications.png')}
+          source={require('../../assets/icons/notifications.png')}
         />
         <View style={EmptyNotStyles.textContainer}>
           <Text style={EmptyNotStyles.heading}>No Notifications yet!</Text>

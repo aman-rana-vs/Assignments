@@ -7,12 +7,12 @@ const TopNav = () => {
     <View style={topNavStyles.container}>
       <Image
         style={topNavStyles.settingsIcon}
-        source={require('../../assets/images/Empty.png')}
+        source={require('../../assets/icons/empty.png')}
       />
       <Text style={topNavStyles.heading}>Notifications</Text>
       <Image
         style={topNavStyles.settingsIcon}
-        source={require('../../assets/images/Settings.png')}
+        source={require('../../assets/icons/settings.png')}
       />
     </View>
   );
