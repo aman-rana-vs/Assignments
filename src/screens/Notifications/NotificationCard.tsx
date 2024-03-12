@@ -15,7 +15,8 @@ interface ICardProps {
   completed: boolean;
 }
 
-const Card = ({imageType, message, time, completed}: ICardProps) => {
+const Card = (props: ICardProps) => {
+  const {imageType, message, time, completed} = props;
   const timeAgo = new TimeAgo('en-US');
   let timeStr = timeAgo.format(time);
   return (

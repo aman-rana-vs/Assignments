@@ -5,9 +5,9 @@ import Notifications from './src/screens/Notifications/Notifications';
 import DActiveExercises from './src/screens/D-Active Exercises/DActiveExercises';
 
 const App = () => {
-  const FLAG = false;
+  const FLAG = true;
   return (
-    <View style={{alignItems: 'center'}}>
+    <View style={{flex: 1, alignItems: 'center'}}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
       {FLAG ? <Notifications /> : <DActiveExercises />}
     </View>

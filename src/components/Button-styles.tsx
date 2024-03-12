@@ -1,12 +1,13 @@
 import {StyleSheet} from 'react-native';
 import {FONTS} from '../theme/typography';
+import {BUTTON_COLORS} from '../theme/colors';
 
 export const buttonStyles = StyleSheet.create({
   buttonContainer: {
     height: 36,
     flex: 1,
     borderRadius: 8,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: BUTTON_COLORS.buttonBackground,
     paddingVertical: 12,
     paddingHorizontal: 16,
     alignItems: 'center',
@@ -19,6 +20,6 @@ export const buttonStyles = StyleSheet.create({
     width: 30,
     fontSize: 12,
     fontFamily: FONTS.QUICKSAND_SEMIBOLD,
-    color: '#292F36',
+    color: BUTTON_COLORS.buttonText,
   },
 });

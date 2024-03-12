@@ -7,5 +7,5 @@ export interface INotification {
   imageType: imageTypes;
   MessageType: string;
   time: Date | number;
-  completed: boolean;
+  isCompleted: boolean;
 }

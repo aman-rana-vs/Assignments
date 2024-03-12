@@ -1,6 +1,7 @@
 import {ImageStyle, StyleSheet, TextStyle, View, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
 import {D_ACTIVE_COLORS} from '../../theme/colors';
+import {SPACING} from '../../theme/theme';
 
 interface ICardStyles {
   mainContainer: ViewStyle;
@@ -16,36 +17,34 @@ interface ICardStyles {
 }
 export const cardStyles: ICardStyles = StyleSheet.create({
   mainContainer: {
-    height: 148,
+    height: SPACING.space_148,
     justifyContent: 'space-between',
-    borderRadius: 16,
+    borderRadius: SPACING.space_16,
     elevation: 5,
     overflow: 'hidden',
   },
   imageBackground: {
     flex: 1,
     justifyContent: 'space-between',
-    borderRadius: 16,
+    borderRadius: SPACING.space_16,
     overflow: 'hidden',
   },
   headingContainer: {
-    paddingVertical: 8,
-    paddingHorizontal: 16,
+    paddingVertical: SPACING.space_8,
+    paddingHorizontal: SPACING.space_16,
     alignItems: 'center',
   },
   heading: {
-    width: 99,
-    height: 25,
     textAlign: 'center',
     fontFamily: FONTS.FRAUNCES_BOLD,
-    fontSize: 18,
+    fontSize: SPACING.space_18,
   },
   buttonsContainer: {
     flexDirection: 'row',
     height: 60,
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    gap: 12,
+    paddingVertical: SPACING.space_8,
+    paddingHorizontal: SPACING.space_16,
+    gap: SPACING.space_12,
   },
 
   outerText: {

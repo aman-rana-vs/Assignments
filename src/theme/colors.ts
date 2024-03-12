@@ -22,3 +22,8 @@ export const D_ACTIVE_COLORS = {
   Scan: '#B96204',
   Square: '#176E6D',
 };
+
+export const BUTTON_COLORS = {
+  buttonBackground: '#FFFFFF',
+  buttonText: '#292F36',
+};

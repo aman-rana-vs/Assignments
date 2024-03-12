@@ -15,7 +15,7 @@ const renderFunction = (item: INotification): JSX.Element => {
       imageType={item.imageType}
       message={item.MessageType}
       time={item.time}
-      completed={item.completed}
+      completed={item.isCompleted}
     />
   );
 };
@@ -25,7 +25,7 @@ const Notifications = () => {
       <TopNav />
       <FlatList
         showsVerticalScrollIndicator={false}
-        data={EMPTY_DATA}
+        data={[]}
         contentContainerStyle={{flexGrow: 1}}
         renderItem={({item}) => renderFunction(item)}
         ListEmptyComponent={<EmptyNotification />}

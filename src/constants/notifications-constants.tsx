@@ -6,63 +6,63 @@ export const NOTIFICATIONS_DATA: Array<INotification> = [
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: new Date(),
-    completed: true,
+    isCompleted: true,
   },
   {
     imageType: imageTypes.REFLECTION,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: Date.now() - 2 * 60 * 1000,
-    completed: true,
+    isCompleted: true,
   },
   {
     imageType: imageTypes.REMINDER,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: Date.now() - 60 * 60 * 1000,
-    completed: false,
+    isCompleted: false,
   },
   {
     imageType: imageTypes.REMINDER,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: Date.now() - 24 * 60 * 60 * 1000,
-    completed: false,
+    isCompleted: false,
   },
   {
     imageType: imageTypes.D_ACTIVE,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: Date.now() - 3 * 24 * 60 * 60 * 1000,
-    completed: false,
+    isCompleted: false,
   },
   {
     imageType: imageTypes.D_ACTIVE,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: Date.now() - 30 * 24 * 60 * 60 * 1000,
-    completed: false,
+    isCompleted: false,
   },
   {
     imageType: imageTypes.REFLECTION,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: new Date(),
-    completed: false,
+    isCompleted: false,
   },
   {
     imageType: imageTypes.REFLECTION,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: new Date(),
-    completed: false,
+    isCompleted: false,
   },
   {
     imageType: imageTypes.REFLECTION,
     MessageType:
       'Reminder of the day Unlocked Complete exercises for bonus points!',
     time: new Date(),
-    completed: false,
+    isCompleted: false,
   },
 ];
 
