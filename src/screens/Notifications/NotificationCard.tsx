@@ -1,10 +1,12 @@
-import {View, Text, Image, ImageSourcePropType} from 'react-native';
 import React from 'react';
-import TimeAgo from 'javascript-time-ago';
+import {View, Text, Image} from 'react-native';
 // English.
 import en from 'javascript-time-ago/locale/en';
-import {cardStyles} from './NotificationCard-styles';
+import TimeAgo from 'javascript-time-ago';
+
 import {images} from '../../constants/notifications-constants';
+
+import {cardStyles} from './NotificationCard-styles';
 
 TimeAgo.addDefaultLocale(en);
 

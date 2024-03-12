@@ -1,11 +1,12 @@
-import {View, Text, FlatList} from 'react-native';
 import React, {useEffect, useState} from 'react';
+import {View, Text, FlatList} from 'react-native';
+
 import TopNav from './DactiveHeader';
 import Card from './DactiveCard';
 import {ID_ACTIVE} from '../../types/d-active-types';
-import {DActiveStyles} from './DActiveExercises-styles';
-import {D_ACTIVE_API_URL} from '../../constants/dactive-constants';
 import {fetchDactiveData} from '../../services/get-dactive-data';
+
+import {DActiveStyles} from './DActiveExercises-styles';
 
 const renderFunction = (item: ID_ACTIVE): JSX.Element => {
   return <Card title={item.title} image={item.image} />;

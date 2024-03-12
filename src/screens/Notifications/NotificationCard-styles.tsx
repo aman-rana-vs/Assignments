@@ -1,4 +1,5 @@
 import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
+
 import {FONTS} from '../../theme/typography';
 import {COLORS} from '../../theme/colors';
 import {SPACING} from '../../theme/theme';

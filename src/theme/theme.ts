@@ -13,6 +13,8 @@ export const SPACING = {
   space_20: 20,
   space_24: 24,
   space_28: 28,
+  space_30: 30,
+  space_36: 36,
   space_48: 48,
   space_56: 56,
   space_60: 60,

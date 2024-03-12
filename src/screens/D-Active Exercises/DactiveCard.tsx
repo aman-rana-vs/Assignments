@@ -1,13 +1,16 @@
-import {View, Text, ImageBackground} from 'react-native';
 import React from 'react';
+import {View, Text, ImageBackground} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import {cardStyles} from './DactiveCard-styles';
+
 import Button from '../../components/Button';
+
 import {
   LINEAR_GRADIENTS,
   colorTypes,
   imageTypes,
 } from '../../constants/dactive-constants';
+
+import {cardStyles} from './DactiveCard-styles';
 
 interface ICardProps {
   title: string;
