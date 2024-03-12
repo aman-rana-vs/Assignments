@@ -1,6 +1,6 @@
 import {View, Text, Image} from 'react-native';
 import React from 'react';
-import {topNavStyles} from './TopNav-styles';
+import {topNavStyles} from './NotificationHeader-styles';
 
 const TopNav = () => {
   return (

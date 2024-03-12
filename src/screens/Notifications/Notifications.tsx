@@ -1,12 +1,12 @@
 import {View, Text, FlatList} from 'react-native';
 import React from 'react';
-import Card from './Card';
+import Card from './NotificationCard';
 import {
   NOTIFICATIONS_DATA,
   EMPTY_DATA,
-} from '../../constants/notifications-data';
+} from '../../constants/notifications-constants';
 import {INotification} from '../../types/notification-types';
-import TopNav from './TopNav';
+import TopNav from './NotificationHeader';
 import EmptyNotification from './EmptyNotification';
 
 const renderFunction = (item: INotification): JSX.Element => {

@@ -1,7 +1,7 @@
 import {View, Text, FlatList} from 'react-native';
 import React, {useEffect, useState} from 'react';
-import TopNav from './TopNav';
-import Card from './Card';
+import TopNav from './DactiveHeader';
+import Card from './DactiveCard';
 import {ID_ACTIVE} from '../../types/d-active-types';
 import {DActiveStyles} from './DActiveExercises-styles';
 

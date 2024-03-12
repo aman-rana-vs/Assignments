@@ -5,7 +5,8 @@ import {buttonStyles} from './Button-styles';
 interface IButtonProps {
   time: string;
 }
-const Button = ({time}: IButtonProps) => {
+const Button = (props: IButtonProps) => {
+  const {time} = props;
   return (
     <View style={buttonStyles.buttonContainer}>
       <Text style={buttonStyles.buttonText}>{time}</Text>

@@ -1,6 +1,6 @@
 import {View, Text} from 'react-native';
 import React from 'react';
-import {topnavStyles} from './TopNav-styles';
+import {topnavStyles} from './DactiveHeader-styles';
 
 const TopNav = () => {
   return (

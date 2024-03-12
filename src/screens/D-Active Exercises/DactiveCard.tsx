@@ -1,29 +1,17 @@
 import {View, Text, ImageBackground} from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
-import {cardStyles} from './Card-styles';
+import {cardStyles} from './DactiveCard-styles';
 import Button from '../../components/Button';
+import {colorTypes, imageTypes} from '../../constants/dactive-constants';
 
 interface ICardProps {
   title: string;
   image: string;
 }
-const imageTypes = {
-  outer: require(`../../assets/images/outer.png`),
-  focus: require(`../../assets/images/focus.png`),
-  follow: require(`../../assets/images/follow.png`),
-  scan: require(`../../assets/images/scan.png`),
-  square: require(`../../assets/images/square.png`),
-};
 
-const colorTypes = {
-  outer: cardStyles.outerText,
-  focus: cardStyles.focusText,
-  follow: cardStyles.followText,
-  scan: cardStyles.scanText,
-  square: cardStyles.squareText,
-};
-const Card = ({title, image}: ICardProps) => {
+const Card = (props: ICardProps) => {
+  const {title, image} = props;
   return (
     <View style={cardStyles.mainContainer}>
       <ImageBackground
