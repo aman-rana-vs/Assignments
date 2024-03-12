@@ -1,7 +1,7 @@
 import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
-import {NOTIFICATION_COLORS} from '../../theme/colors';
 import {SPACING} from '../../theme/theme';
+import {COLORS} from '../../theme/colors';
 
 interface IEmptyNotStyles {
   mainContainer: ViewStyle;
@@ -13,9 +13,9 @@ interface IEmptyNotStyles {
 }
 export const EmptyNotStyles: IEmptyNotStyles = StyleSheet.create({
   mainContainer: {
+    alignItems: 'center',
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
   },
 
   subContainer: {
@@ -27,17 +27,17 @@ export const EmptyNotStyles: IEmptyNotStyles = StyleSheet.create({
     width: SPACING.space_154,
   },
   heading: {
+    color: COLORS.tundora,
     fontFamily: FONTS.FRAUNCES_BOLD,
     fontSize: 24,
-    width: 327,
     textAlign: 'center',
-    color: NOTIFICATION_COLORS.EMPTY_NOTIFICATIONS.Heading,
+    width: 327,
   },
   message: {
+    color: COLORS.neutral700,
     fontFamily: FONTS.QUICKSAND_MEDIUM,
-    textAlign: 'center',
     fontSize: 16,
-    color: NOTIFICATION_COLORS.EMPTY_NOTIFICATIONS.Message,
+    textAlign: 'center',
   },
   textContainer: {
     gap: SPACING.space_8,

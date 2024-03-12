@@ -1,6 +1,6 @@
 import {ImageStyle, StyleSheet, TextStyle, View, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
-import {D_ACTIVE_COLORS} from '../../theme/colors';
+import {COLORS} from '../../theme/colors';
 import {SPACING} from '../../theme/theme';
 
 interface ICardStyles {
@@ -48,19 +48,19 @@ export const cardStyles: ICardStyles = StyleSheet.create({
   },
 
   outerText: {
-    color: D_ACTIVE_COLORS.Outer,
+    color: COLORS.secondary600,
   },
 
   focusText: {
-    color: D_ACTIVE_COLORS.Focus,
+    color: COLORS.primary700,
   },
   followText: {
-    color: D_ACTIVE_COLORS.Follow,
+    color: COLORS.neutral700,
   },
   scanText: {
-    color: D_ACTIVE_COLORS.Scan,
+    color: COLORS.accent700,
   },
   squareText: {
-    color: D_ACTIVE_COLORS.Square,
+    color: COLORS.primary700,
   },
 });

@@ -1,29 +1,12 @@
-export const NOTIFICATION_COLORS = {
-  CARD: {
-    Message: '#000000',
-    TimeAgo: '#4E5E6C',
-    BorderColor: '#E2E8EB',
-  },
-  EMPTY_NOTIFICATIONS: {
-    Heading: '#454545',
-    Message: '#292F36',
-  },
-  NOTIFICATION_COMPLETED: '#F1FCFA',
-};
-
-export const TOP_NAV = {
-  Heading: '#292F36',
-};
-
-export const D_ACTIVE_COLORS = {
-  Outer: '#D72B6A',
-  Focus: '#176E6D',
-  Follow: '#292F36',
-  Scan: '#B96204',
-  Square: '#176E6D',
-};
-
-export const BUTTON_COLORS = {
-  buttonBackground: '#FFFFFF',
-  buttonText: '#292F36',
+export const COLORS = {
+  neutral100: '#E2E8EB',
+  neutral700: '#292F36',
+  neutral600: '#4E5E6C',
+  neutralWhite: '#FFFFFF',
+  primary50: '#F1FCFA',
+  black: '#000000',
+  secondary600: '#D72B6A',
+  primary700: '#176E6D',
+  accent700: '#B96204',
+  tundora: '#454545',
 };

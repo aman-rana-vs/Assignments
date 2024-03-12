@@ -1,6 +1,6 @@
 import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
-import {NOTIFICATION_COLORS} from '../../theme/colors';
+import {COLORS} from '../../theme/colors';
 import {SPACING} from '../../theme/theme';
 
 interface ICardStyles {
@@ -15,7 +15,7 @@ interface ICardStyles {
 }
 export const cardStyles: ICardStyles = StyleSheet.create({
   container: {
-    borderColor: NOTIFICATION_COLORS.CARD.BorderColor,
+    borderColor: COLORS.neutral100,
     borderWidth: 0.7,
     flex: 1,
     gap: SPACING.space_4,
@@ -23,7 +23,7 @@ export const cardStyles: ICardStyles = StyleSheet.create({
     paddingVertical: SPACING.space_16,
   },
   completedCard: {
-    backgroundColor: NOTIFICATION_COLORS.NOTIFICATION_COMPLETED,
+    backgroundColor: COLORS.primary50,
   },
   card: {
     alignItems: 'center',
@@ -40,7 +40,7 @@ export const cardStyles: ICardStyles = StyleSheet.create({
     justifyContent: 'center',
   },
   message: {
-    color: NOTIFICATION_COLORS.CARD.Message,
+    color: COLORS.black,
     fontFamily: FONTS.QUICKSAND_MEDIUM,
     fontSize: SPACING.space_14,
     lineHeight: 16.8,
@@ -49,7 +49,7 @@ export const cardStyles: ICardStyles = StyleSheet.create({
     paddingHorizontal: SPACING.space_76,
   },
   timeAgoText: {
-    color: NOTIFICATION_COLORS.CARD.TimeAgo,
+    color: COLORS.neutral600,
     fontFamily: FONTS.QUICKSAND_MEDIUM,
     fontSize: SPACING.space_12,
     height: SPACING.space_18,

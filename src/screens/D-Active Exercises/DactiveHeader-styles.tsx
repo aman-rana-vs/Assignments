@@ -1,6 +1,6 @@
 import {StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
-import {TOP_NAV} from '../../theme/colors';
+import {COLORS} from '../../theme/colors';
 import {SPACING} from '../../theme/theme';
 
 type TTopNavStyles = {
@@ -17,7 +17,7 @@ export const topnavStyles: TTopNavStyles = StyleSheet.create({
     width: 375,
   },
   text: {
-    color: TOP_NAV.Heading,
+    color: COLORS.neutral700,
     fontFamily: FONTS.FRAUNCES_BOLD,
     fontSize: SPACING.space_18,
     textAlign: 'center',

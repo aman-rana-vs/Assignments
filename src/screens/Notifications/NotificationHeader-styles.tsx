@@ -1,6 +1,6 @@
 import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import {FONTS} from '../../theme/typography';
-import {NOTIFICATION_COLORS, TOP_NAV} from '../../theme/colors';
+import {COLORS} from '../../theme/colors';
 import {SPACING} from '../../theme/theme';
 
 interface ITopNavStyles {
@@ -18,7 +18,7 @@ export const topNavStyles: ITopNavStyles = StyleSheet.create({
     paddingVertical: SPACING.space_16,
   },
   heading: {
-    color: TOP_NAV.Heading,
+    color: COLORS.neutral700,
     flex: 1,
     fontFamily: FONTS.FRAUNCES_BOLD,
     fontSize: 18,

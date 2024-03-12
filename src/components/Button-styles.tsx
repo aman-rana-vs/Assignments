@@ -1,11 +1,11 @@
 import {StyleSheet} from 'react-native';
 import {FONTS} from '../theme/typography';
-import {BUTTON_COLORS} from '../theme/colors';
+import {BUTTON_COLORS, COLORS} from '../theme/colors';
 
 export const buttonStyles = StyleSheet.create({
   buttonContainer: {
     alignItems: 'center',
-    backgroundColor: BUTTON_COLORS.buttonBackground,
+    backgroundColor: COLORS.neutralWhite,
     borderRadius: 8,
     elevation: 10,
     flex: 1,
@@ -16,7 +16,7 @@ export const buttonStyles = StyleSheet.create({
     paddingVertical: 12,
   },
   buttonText: {
-    color: BUTTON_COLORS.buttonText,
+    color: COLORS.neutral700,
     fontFamily: FONTS.QUICKSAND_SEMIBOLD,
     fontSize: 12,
     height: 18,
