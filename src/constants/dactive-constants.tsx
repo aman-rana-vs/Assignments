@@ -1,4 +1,4 @@
-import {cardStyles} from '../components/d-active-card/DActiveCard-styles';
+import {ASDActiveCardStyles} from '../components/d-active-card/ASDActiveCard-styles';
 
 export const imageTypes = {
   outer: require(`../assets/images/outer.png`),
@@ -9,11 +9,11 @@ export const imageTypes = {
 };
 
 export const titleColors = {
-  outer: cardStyles.outerText,
-  focus: cardStyles.focusText,
-  follow: cardStyles.followText,
-  scan: cardStyles.scanText,
-  square: cardStyles.squareText,
+  outer: ASDActiveCardStyles.outerText,
+  focus: ASDActiveCardStyles.focusText,
+  follow: ASDActiveCardStyles.followText,
+  scan: ASDActiveCardStyles.scanText,
+  square: ASDActiveCardStyles.squareText,
 };
 
 export const D_ACTIVE_API_URL = 'http://10.0.2.2:3000/exercises';

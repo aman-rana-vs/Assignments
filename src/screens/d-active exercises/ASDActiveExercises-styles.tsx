@@ -1,11 +1,11 @@
 import {StyleSheet, ViewStyle} from 'react-native';
 import {SPACING} from '../../theme/spacing';
 
-interface IDActiveStyles {
+interface IASDActiveStyles {
   container: ViewStyle;
   listContainer: ViewStyle;
 }
-export const DActiveStyles = StyleSheet.create({
+export const ASDActiveStyles: IASDActiveStyles = StyleSheet.create({
   container: {
     alignItems: 'center',
     flex: 1,

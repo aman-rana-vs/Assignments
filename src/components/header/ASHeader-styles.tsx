@@ -4,12 +4,12 @@ import {FONTS} from '../../theme/typography';
 import {COLORS} from '../../theme/colors';
 import {SPACING} from '../../theme/spacing';
 
-interface ITopNavStyles {
+interface IASHeaderStyles {
   container: ViewStyle;
   heading: TextStyle;
   settingsIcon: ImageStyle;
 }
-export const topNavStyles: ITopNavStyles = StyleSheet.create({
+export const ASHeaderStyles: IASHeaderStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     gap: SPACING.space_16,
@@ -17,6 +17,7 @@ export const topNavStyles: ITopNavStyles = StyleSheet.create({
     justifyContent: 'space-evenly',
     paddingHorizontal: SPACING.space_24,
     paddingVertical: SPACING.space_16,
+    alignItems: 'center',
   },
   heading: {
     color: COLORS.neutral700,

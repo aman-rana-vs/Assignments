@@ -4,7 +4,7 @@ import {FONTS} from '../../theme/typography';
 import {COLORS} from '../../theme/colors';
 import {SPACING} from '../../theme/spacing';
 
-interface ICardStyles {
+interface IASDActiveCardStyles {
   container: ViewStyle;
   backgroundImage: ImageStyle;
   titleContainer: ViewStyle;
@@ -16,7 +16,7 @@ interface ICardStyles {
   scanText: TextStyle;
   squareText: TextStyle;
 }
-export const cardStyles: ICardStyles = StyleSheet.create({
+export const ASDActiveCardStyles: IASDActiveCardStyles = StyleSheet.create({
   container: {
     borderRadius: SPACING.space_16,
     elevation: SPACING.space_5,

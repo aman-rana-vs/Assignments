@@ -4,11 +4,11 @@ import {FONTS} from '../../theme/typography';
 import {COLORS} from '../../theme/colors';
 import {SPACING} from '../../theme/spacing';
 
-interface IButtonStyles {
+interface IASButtonStyles {
   container: ViewStyle;
   buttonText: TextStyle;
 }
-export const buttonStyles: IButtonStyles = StyleSheet.create({
+export const ASButtonStyles: IASButtonStyles = StyleSheet.create({
   container: {
     alignItems: 'center',
     backgroundColor: COLORS.neutralWhite,

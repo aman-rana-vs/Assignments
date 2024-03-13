@@ -1,18 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import {View, FlatList} from 'react-native';
 
-import DActiveHeader from './DActiveHeader';
 import {ID_ACTIVE} from '../../types/d-active-types';
-import DActiveCard from '../../components/d-active-card/DActiveCard';
+import DActiveCard from '../../components/d-active-card/ASDActiveCard';
 
 import {fetchDactiveData} from '../../services/get-dactive-data';
 
-import {DActiveStyles} from './DActiveExercises-styles';
+import {ASDActiveStyles} from './ASDActiveExercises-styles';
+import ASHeader from '../../components/header/ASHeader';
 
 const renderFunction = (item: ID_ACTIVE): JSX.Element => {
   return <DActiveCard title={item.title} image={item.image} />;
 };
-const DActiveExercises = () => {
+
+const ASDActiveExercises = () => {
   const [D_ACTIVE_DATA, SET_D_ACTIVE_DATA] = useState([]);
 
   useEffect(() => {
@@ -20,11 +21,11 @@ const DActiveExercises = () => {
   }, []);
 
   return (
-    <View style={DActiveStyles.container}>
-      <DActiveHeader />
+    <View style={ASDActiveStyles.container}>
+      <ASHeader title="D-Active" emptyView={false} />
       <FlatList
         data={D_ACTIVE_DATA}
-        contentContainerStyle={DActiveStyles.listContainer}
+        contentContainerStyle={ASDActiveStyles.listContainer}
         renderItem={({item}) => renderFunction(item)}
         showsVerticalScrollIndicator={false}
       />
@@ -32,4 +33,4 @@ const DActiveExercises = () => {
   );
 };
 
-export default DActiveExercises;
+export default ASDActiveExercises;

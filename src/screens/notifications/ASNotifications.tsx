@@ -1,19 +1,19 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
 
-import EmptyNotification from '../../components/empty-data/EmptyData';
-import NotificationHeader from './NotificationHeader';
-import NotificationCard from '../../components/notification-card/NotificationCard';
+import EmptyNotification from '../../components/empty-data/ASEmptyData';
 import {INotification} from '../../types/notification-types';
 
 import {
   NOTIFICATIONS_DATA,
   EMPTY_DATA,
 } from '../../constants/notifications-constants';
+import ASHeader from '../../components/header/ASHeader';
+import ASNotificationCard from '../../components/notification-card/ASNotificationCard';
 
 const renderFunction = (item: INotification): JSX.Element => {
   return (
-    <NotificationCard
+    <ASNotificationCard
       imageType={item.imageType}
       message={item.MessageType}
       time={item.time}
@@ -21,10 +21,14 @@ const renderFunction = (item: INotification): JSX.Element => {
     />
   );
 };
-const Notifications = () => {
+const ASNotifications = () => {
   return (
     <View>
-      <NotificationHeader />
+      <ASHeader
+        title="Notifications"
+        emptyView={true}
+        imgSrc={require('../../assets/icons/settings.png')}
+      />
       <FlatList
         showsVerticalScrollIndicator={false}
         data={NOTIFICATIONS_DATA}
@@ -36,4 +40,4 @@ const Notifications = () => {
   );
 };
 
-export default Notifications;
+export default ASNotifications;

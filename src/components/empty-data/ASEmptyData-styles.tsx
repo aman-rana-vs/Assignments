@@ -4,7 +4,7 @@ import {FONTS} from '../../theme/typography';
 import {SPACING} from '../../theme/spacing';
 import {COLORS} from '../../theme/colors';
 
-interface IEmptyDataStyles {
+interface IASEmptyDataStyles {
   container: ViewStyle;
   subContainer: ViewStyle;
   icon: ImageStyle;
@@ -12,7 +12,7 @@ interface IEmptyDataStyles {
   heading: TextStyle;
   message: TextStyle;
 }
-export const emptyDataStyles: IEmptyDataStyles = StyleSheet.create({
+export const ASEmptyDataStyles: IASEmptyDataStyles = StyleSheet.create({
   container: {
     alignItems: 'center',
     flex: 1,
