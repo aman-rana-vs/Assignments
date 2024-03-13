@@ -4,7 +4,7 @@ import {View, FlatList} from 'react-native';
 import {ID_ACTIVE} from '../../types/d-active-types';
 import DActiveCard from '../../components/d-active-card/ASDActiveCard';
 
-import {fetchDactiveData} from '../../services/get-dactive-data';
+import {fetchDactiveData} from '../../services/api/get-dactive-data';
 
 import {ASDActiveStyles} from './ASDActiveExercises-styles';
 import ASHeader from '../../components/header/ASHeader';

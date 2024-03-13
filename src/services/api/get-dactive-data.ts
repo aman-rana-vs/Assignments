@@ -1,4 +1,4 @@
-import {D_ACTIVE_API_URL} from '../constants/dactive-constants';
+import {D_ACTIVE_API_URL} from '../../constants/api-constants';
 
 export function fetchDactiveData(SET_D_ACTIVE_DATA: any) {
   fetch(D_ACTIVE_API_URL)

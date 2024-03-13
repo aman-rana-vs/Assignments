@@ -31,7 +31,7 @@ const ASNotifications = () => {
       />
       <FlatList
         showsVerticalScrollIndicator={false}
-        data={NOTIFICATIONS_DATA}
+        data={EMPTY_DATA}
         contentContainerStyle={{flexGrow: 1}}
         renderItem={({item}) => renderFunction(item)}
         ListEmptyComponent={<EmptyNotification />}

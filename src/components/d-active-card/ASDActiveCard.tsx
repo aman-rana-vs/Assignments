@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-import {titleColors, imageTypes} from '../../constants/dactive-constants';
+import {DActiveCardInfo} from '../../constants/dactive-constants';
 
 import {ASDActiveCardStyles} from './ASDActiveCard-styles';
 import {resizeMode} from '../../constants/common-constants';
@@ -16,11 +16,12 @@ interface ICardProps {
 
 const ASDActiveCard = (props: ICardProps) => {
   const {title, image} = props;
+  console.log(image);
   return (
     <View style={ASDActiveCardStyles.container}>
       <ImageBackground
         style={ASDActiveCardStyles.backgroundImage}
-        source={imageTypes[image as keyof typeof imageTypes]}
+        source={DActiveCardInfo[image as keyof typeof DActiveCardInfo].imageSrc}
         resizeMode={resizeMode.cover}>
         <LinearGradient
           colors={LINEAR_GRADIENTS.gradient1}
@@ -28,7 +29,7 @@ const ASDActiveCard = (props: ICardProps) => {
           <Text
             style={[
               ASDActiveCardStyles.title,
-              titleColors[image as keyof typeof titleColors],
+              DActiveCardInfo[image as keyof typeof DActiveCardInfo].textColour,
             ]}>
             {title}
           </Text>

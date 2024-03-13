@@ -10,7 +10,7 @@ interface IASDActiveCardStyles {
   titleContainer: ViewStyle;
   title: TextStyle;
   buttonsContainer: ViewStyle;
-  outerText: TextStyle;
+  outerRingText: TextStyle;
   focusText: TextStyle;
   followText: TextStyle;
   scanText: TextStyle;
@@ -48,7 +48,7 @@ export const ASDActiveCardStyles: IASDActiveCardStyles = StyleSheet.create({
     paddingVertical: SPACING.space_8,
   },
 
-  outerText: {
+  outerRingText: {
     color: COLORS.secondary600,
   },
 
