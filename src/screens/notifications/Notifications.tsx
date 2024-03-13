@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { View, FlatList } from 'react-native'
 
 import ASNotificationCard from '../../components/notification-card/ASNotificationCard'
@@ -6,8 +6,7 @@ import ASHeader from '../../components/header/ASHeader'
 import EmptyNotification from '../../components/empty-data/ASEmptyData'
 
 import { INotification } from '../../types/notification-types'
-
-import { NOTIFICATIONS_DATA, EMPTY_DATA } from '../../constants/notifications-constants'
+import { fetchNotificationData } from '../../services/api/get-notifications-data'
 
 const renderFunction = (item: INotification): JSX.Element => {
   return (
@@ -20,6 +19,12 @@ const renderFunction = (item: INotification): JSX.Element => {
   )
 }
 const Notifications = () => {
+  const [NOTIFICATIONS_DATA, SET_NOTIFICATIONS_DATA] = useState([])
+
+  useEffect(() => {
+    fetchNotificationData(SET_NOTIFICATIONS_DATA)
+  }, [])
+
   return (
     <View>
       <ASHeader

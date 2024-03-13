@@ -1,12 +1,14 @@
 import React from 'react'
 import { ImageBackground, Text, View } from 'react-native'
+
 import LinearGradient from 'react-native-linear-gradient'
 
-import { DActiveCardInfo } from '../../constants/dactive-constants'
 import ASButton from '../button/ASButton'
 
+import { DActiveCardInfo } from '../../constants/dactive-constants'
 import { resizeMode } from '../../constants/common-constants'
 import { COLORS } from '../../theme/colors'
+
 import { ASDActiveCardStyles } from './asDActiveCard-styles'
 
 interface ICardProps {

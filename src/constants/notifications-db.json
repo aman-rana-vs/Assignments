@@ -1,0 +1,58 @@
+{
+  "notifications": [
+    {
+      "imageType": "Reflection",
+      "MessageType": "Reminder of the day Unlocked Complete exercises for bonus points!",
+      "time": 1710349531883,
+      "isCompleted": true
+    },
+    {
+      "imageType": "Reflection",
+      "MessageType": "Reminder of the day Unlocked Complete exercises for bonus points!",
+      "time": 1710349531883,
+      "isCompleted": true
+    },
+    {
+      "imageType": "Reminder",
+      "MessageType": "Reminder of the day Unlocked Complete exercises for bonus points!",
+      "time": 1710349411883,
+      "isCompleted": false
+    },
+    {
+      "imageType": "Reminder",
+      "MessageType": "Reminder of the day Unlocked Complete exercises for bonus points!",
+      "time": 1710349411883,
+      "isCompleted": false
+    },
+    {
+      "imageType": "D-Active",
+      "MessageType": "Reminder of the day Unlocked Complete exercises for bonus points!",
+      "time": 1710349411883,
+      "isCompleted": false
+    },
+    {
+      "imageType": "D-Active",
+      "MessageType": "Reminder of the day Unlocked Complete exercises for bonus points!",
+      "time": 1710345931883,
+      "isCompleted": false
+    },
+    {
+      "imageType": "Reflection",
+      "MessageType": "Reminder of the day Unlocked Complete exercises for bonus points!",
+      "time": 1710342331883,
+      "isCompleted": false
+    },
+    {
+      "imageType": "Reflection",
+      "MessageType": "Reminder of the day Unlocked Complete exercises for bonus points!",
+      "time": 1710263131883,
+      "isCompleted": false
+    },
+    {
+      "imageType": "Reflection",
+      "MessageType": "Reminder of the day Unlocked Complete exercises for bonus points!",
+      "time": 1707757531883,
+      "isCompleted": false
+    }
+  ]
+}
