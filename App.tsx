@@ -4,7 +4,7 @@ import ASDActiveExercises from './src/screens/d-active exercises/ASDActiveExerci
 import ASNotifications from './src/screens/notifications/ASNotifications';
 
 const App = () => {
-  const showNotificationScreen = true;
+  const showNotificationScreen = false;
   return (
     <View style={{flex: 1, alignItems: 'center'}}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />

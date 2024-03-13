@@ -1,6 +1,6 @@
 import {PALETTE} from './palette';
 
-export const COLORS = {
+const colors = {
   neutral100: PALETTE.neutral[100],
   neutral700: PALETTE.neutral[700],
   neutral600: PALETTE.neutral[600],
@@ -11,13 +11,9 @@ export const COLORS = {
   primary700: PALETTE.primary[700],
   accent700: PALETTE.accent[700],
   tundora: PALETTE.tundora,
+  dActiveCardTitleGradient: PALETTE.dActiveCardTitleGradient,
+  dActiveCardButtonContainerGradient:
+    PALETTE.dActiveCardButtonContainerGradient,
 };
 
-export const LINEAR_GRADIENTS = {
-  gradient1: [
-    'rgba(255, 255, 255, 0.56)',
-    'rgba(255, 255, 255, 0.5)',
-    'rgba(255, 255, 255, 0.1)',
-  ],
-  gradient2: ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.8)'],
-};
+export const COLORS = colors;

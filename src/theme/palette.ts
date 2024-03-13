@@ -20,4 +20,6 @@ export const PALETTE = {
   },
   black: '#000000',
   tundora: '#454545',
+  dActiveCardTitleGradient: ['#FFFFFF8F', '#FFFFFF1E', '#FFFFFF00'],
+  dActiveCardButtonContainerGradient: ['#FFFFFF00', '#FFFFFFCC'],
 };

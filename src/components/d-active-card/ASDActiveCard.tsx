@@ -2,12 +2,12 @@ import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
+import ASButton from '../button/ASButton';
 import {DActiveCardInfo} from '../../constants/dactive-constants';
 
 import {ASDActiveCardStyles} from './ASDActiveCard-styles';
 import {resizeMode} from '../../constants/common-constants';
-import {LINEAR_GRADIENTS} from '../../theme/colors';
-import ASButton from '../button/ASButton';
+import {COLORS} from '../../theme/colors';
 
 interface ICardProps {
   title: string;
@@ -16,7 +16,6 @@ interface ICardProps {
 
 const ASDActiveCard = (props: ICardProps) => {
   const {title, image} = props;
-  console.log(image);
   return (
     <View style={ASDActiveCardStyles.container}>
       <ImageBackground
@@ -24,7 +23,7 @@ const ASDActiveCard = (props: ICardProps) => {
         source={DActiveCardInfo[image as keyof typeof DActiveCardInfo].imageSrc}
         resizeMode={resizeMode.cover}>
         <LinearGradient
-          colors={LINEAR_GRADIENTS.gradient1}
+          colors={COLORS.dActiveCardTitleGradient}
           style={ASDActiveCardStyles.titleContainer}>
           <Text
             style={[
@@ -35,7 +34,7 @@ const ASDActiveCard = (props: ICardProps) => {
           </Text>
         </LinearGradient>
         <LinearGradient
-          colors={LINEAR_GRADIENTS.gradient2}
+          colors={COLORS.dActiveCardButtonContainerGradient}
           style={ASDActiveCardStyles.buttonsContainer}>
           <ASButton time="2min" />
           <ASButton time="4min" />
