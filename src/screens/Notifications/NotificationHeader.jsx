@@ -3,7 +3,7 @@ import {View, Text, Image} from 'react-native';
 
 import {topNavStyles} from './NotificationHeader-styles';
 
-const TopNav = () => {
+const NotificationHeader = () => {
   return (
     <View style={topNavStyles.container}>
       <View style={topNavStyles.settingsIcon} />
@@ -16,4 +16,4 @@ const TopNav = () => {
   );
 };
 
-export default TopNav;
+export default NotificationHeader;

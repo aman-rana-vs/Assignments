@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-import {topnavStyles} from './DactiveHeader-styles';
+import {topnavStyles} from './DActiveHeader-styles';
 
-const TopNav = () => {
+const DActiveHeader = () => {
   return (
     <View style={topnavStyles.container}>
       <Text style={topnavStyles.text}>D-active</Text>
@@ -11,4 +11,4 @@ const TopNav = () => {
   );
 };
 
-export default TopNav;
+export default DActiveHeader;

@@ -1,4 +1,4 @@
-export const COLORS = {
+export const PALETTE = {
   neutral: {
     '0': '#FFFFFF',
     '100': '#E2E8EB',

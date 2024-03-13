@@ -11,6 +11,7 @@ const TimeStamps = {
   Time3DayAgo: currTimeStamp - 3 * 24 * 60 * 60 * 1000,
   Time1MonthAgo: currTimeStamp - 30 * 24 * 60 * 60 * 1000,
 };
+
 const messageTxt =
   'Reminder of the day Unlocked Complete exercises for bonus points!';
 

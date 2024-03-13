@@ -1,4 +1,4 @@
-import {cardStyles} from '../components/d-active-card/DactiveCard-styles';
+import {cardStyles} from '../components/d-active-card/DActiveCard-styles';
 
 export const imageTypes = {
   outer: require(`../assets/images/outer.png`),

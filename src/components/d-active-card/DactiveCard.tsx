@@ -9,21 +9,22 @@ import {
   imageTypes,
 } from '../../constants/dactive-constants';
 
-import {cardStyles} from './DactiveCard-styles';
+import {cardStyles} from './DActiveCard-styles';
+import {resizeMode} from '../../constants/common-constants';
 
 interface ICardProps {
   title: string;
   image: string;
 }
 
-const Card = (props: ICardProps) => {
+const DActiveCard = (props: ICardProps) => {
   const {title, image} = props;
   return (
     <View style={cardStyles.container}>
       <ImageBackground
         style={cardStyles.backgroundImage}
         source={imageTypes[image as keyof typeof imageTypes]}
-        resizeMode="cover">
+        resizeMode={resizeMode.cover}>
         <LinearGradient
           colors={LINEAR_GRADIENTS.gradient1}
           style={cardStyles.titleContainer}>
@@ -47,4 +48,4 @@ const Card = (props: ICardProps) => {
   );
 };
 
-export default Card;
+export default DActiveCard;

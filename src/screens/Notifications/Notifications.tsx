@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
 
-import Card from '../../components/notification-card/NotificationCard';
-import TopNav from './NotificationHeader';
 import EmptyNotification from '../../components/empty-data/EmptyData';
+import NotificationHeader from './NotificationHeader';
+import NotificationCard from '../../components/notification-card/NotificationCard';
 import {INotification} from '../../types/notification-types';
 
 import {
@@ -13,7 +13,7 @@ import {
 
 const renderFunction = (item: INotification): JSX.Element => {
   return (
-    <Card
+    <NotificationCard
       imageType={item.imageType}
       message={item.MessageType}
       time={item.time}
@@ -24,10 +24,10 @@ const renderFunction = (item: INotification): JSX.Element => {
 const Notifications = () => {
   return (
     <View>
-      <TopNav />
+      <NotificationHeader />
       <FlatList
         showsVerticalScrollIndicator={false}
-        data={NOTIFICATIONS_DATA}
+        data={[]}
         contentContainerStyle={{flexGrow: 1}}
         renderItem={({item}) => renderFunction(item)}
         ListEmptyComponent={<EmptyNotification />}

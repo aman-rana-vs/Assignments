@@ -17,7 +17,7 @@ interface ICardProps {
   completed: boolean;
 }
 
-const Card = (props: ICardProps) => {
+const NotificationCard = (props: ICardProps) => {
   const {imageType, message, time, completed} = props;
   const timeAgo = new TimeAgo('en-US');
   let timeStr = timeAgo.format(time);
@@ -43,4 +43,4 @@ const Card = (props: ICardProps) => {
   );
 };
 
-export default Card;
+export default NotificationCard;
