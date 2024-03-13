@@ -27,7 +27,7 @@ const Notifications = () => {
       <NotificationHeader />
       <FlatList
         showsVerticalScrollIndicator={false}
-        data={[]}
+        data={NOTIFICATIONS_DATA}
         contentContainerStyle={{flexGrow: 1}}
         renderItem={({item}) => renderFunction(item)}
         ListEmptyComponent={<EmptyNotification />}

@@ -1,5 +1,5 @@
 import {StyleSheet, ViewStyle} from 'react-native';
-import {SPACING} from '../../theme/theme';
+import {SPACING} from '../../theme/spacing';
 
 interface IDActiveStyles {
   container: ViewStyle;

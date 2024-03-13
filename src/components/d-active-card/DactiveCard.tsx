@@ -3,14 +3,11 @@ import {View, Text, ImageBackground} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 import CustomButton from '../custom-button/CustomButton';
-import {
-  LINEAR_GRADIENTS,
-  titleColors,
-  imageTypes,
-} from '../../constants/dactive-constants';
+import {titleColors, imageTypes} from '../../constants/dactive-constants';
 
 import {cardStyles} from './DActiveCard-styles';
 import {resizeMode} from '../../constants/common-constants';
+import {LINEAR_GRADIENTS} from '../../theme/colors';
 
 interface ICardProps {
   title: string;

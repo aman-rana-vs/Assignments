@@ -1,7 +1,7 @@
 import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 
 import {FONTS} from '../../theme/typography';
-import {SPACING} from '../../theme/theme';
+import {SPACING} from '../../theme/spacing';
 import {COLORS} from '../../theme/colors';
 
 interface IEmptyDataStyles {

@@ -12,3 +12,12 @@ export const COLORS = {
   accent700: PALETTE.accent[700],
   tundora: PALETTE.tundora,
 };
+
+export const LINEAR_GRADIENTS = {
+  gradient1: [
+    'rgba(255, 255, 255, 0.56)',
+    'rgba(255, 255, 255, 0.5)',
+    'rgba(255, 255, 255, 0.1)',
+  ],
+  gradient2: ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.8)'],
+};
