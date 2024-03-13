@@ -1,7 +1,7 @@
 import {View, Text, Image} from 'react-native';
 import React from 'react';
 
-import {ASHeaderStyles} from './ASHeader-styles';
+import {ASHeaderStyles} from './asHeader-styles';
 
 interface IASHeaderProps {
   emptyView: boolean;

@@ -4,7 +4,7 @@ import {View, Text, Image} from 'react-native';
 import {images} from '../../constants/notifications-constants';
 
 import {getTime} from '../../utils/common-utils';
-import {ASNotificationCardStyles} from './ASNotificationCard-styles';
+import {ASNotificationCardStyles} from './asNotificationCard-styles';
 
 interface IASNotificationCardProps {
   imageType: string;

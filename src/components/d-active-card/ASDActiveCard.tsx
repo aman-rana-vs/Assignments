@@ -5,7 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import ASButton from '../button/ASButton';
 import {DActiveCardInfo} from '../../constants/dactive-constants';
 
-import {ASDActiveCardStyles} from './ASDActiveCard-styles';
+import {ASDActiveCardStyles} from './asDActiveCard-styles';
 import {resizeMode} from '../../constants/common-constants';
 import {COLORS} from '../../theme/colors';
 

@@ -1,16 +1,17 @@
-import {View, Text, StatusBar} from 'react-native';
-import React from 'react';
-import ASDActiveExercises from './src/screens/d-active exercises/ASDActiveExercises';
-import ASNotifications from './src/screens/notifications/ASNotifications';
+import { View, Text, StatusBar, TurboModuleRegistry } from 'react-native'
+import React from 'react'
+
+import Notifications from './src/screens/notifications/Notifications'
+import DActiveExercises from './src/screens/d-active exercises/DActiveExercises'
 
 const App = () => {
-  const showNotificationScreen = false;
+  const showNotificationScreen = true
   return (
-    <View style={{flex: 1, alignItems: 'center'}}>
+    <View style={{ flex: 1, alignItems: 'center' }}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
-      {showNotificationScreen ? <ASNotifications /> : <ASDActiveExercises />}
+      {showNotificationScreen ? <Notifications /> : <DActiveExercises />}
     </View>
-  );
-};
+  )
+}
 
-export default App;
+export default App

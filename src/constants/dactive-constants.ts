@@ -1,4 +1,4 @@
-import {ASDActiveCardStyles} from '../components/d-active-card/ASDActiveCard-styles';
+import {ASDActiveCardStyles} from '../components/d-active-card/asDActiveCard-styles';
 
 export const DActiveCardInfo = {
   'outer ring': {

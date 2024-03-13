@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 
-import {ASButtonStyles} from './ASButton-styles';
+import {ASButtonStyles} from './asButton-styles';
 
 interface IASButtonProps {
   time: string;

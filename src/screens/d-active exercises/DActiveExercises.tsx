@@ -7,13 +7,13 @@ import ASHeader from '../../components/header/ASHeader';
 
 import {fetchDactiveData} from '../../services/api/get-dactive-data';
 
-import {ASDActiveStyles} from './ASDActiveExercises-styles';
+import {ASDActiveStyles} from './DActiveExercises-styles';
 
 const renderFunction = (item: ID_ACTIVE): JSX.Element => {
   return <DActiveCard title={item.title} image={item.image} />;
 };
 
-const ASDActiveExercises = () => {
+const DActiveExercises = () => {
   const [D_ACTIVE_DATA, SET_D_ACTIVE_DATA] = useState([]);
 
   useEffect(() => {
@@ -33,4 +33,4 @@ const ASDActiveExercises = () => {
   );
 };
 
-export default ASDActiveExercises;
+export default DActiveExercises;
