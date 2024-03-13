@@ -1,7 +1,7 @@
-import React from 'react';
-import {View, Text, Image} from 'react-native';
+import React from 'react'
+import { Image, Text, View } from 'react-native'
 
-import {ASEmptyDataStyles} from './asEmptyData-styles';
+import { ASEmptyDataStyles } from './asEmptyData-styles'
 
 const ASEmptyData = () => {
   return (
@@ -19,7 +19,7 @@ const ASEmptyData = () => {
         </View>
       </View>
     </View>
-  );
-};
+  )
+}
 
-export default ASEmptyData;
+export default ASEmptyData

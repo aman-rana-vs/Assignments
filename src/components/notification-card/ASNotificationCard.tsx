@@ -1,22 +1,22 @@
-import React from 'react';
-import {View, Text, Image} from 'react-native';
+import React from 'react'
+import { Image, Text, View } from 'react-native'
 
-import {images} from '../../constants/notifications-constants';
+import { images } from '../../constants/notifications-constants'
 
-import {getTime} from '../../utils/common-utils';
-import {ASNotificationCardStyles} from './asNotificationCard-styles';
+import { getTime } from '../../utils/common-utils'
+import { ASNotificationCardStyles } from './asNotificationCard-styles'
 
 interface IASNotificationCardProps {
-  imageType: string;
-  message: string;
-  time: Date | number;
-  completed: boolean;
+  imageType: string
+  message: string
+  time: Date | number
+  completed: boolean
 }
 
 const ASNotificationCard = (props: IASNotificationCardProps) => {
-  const {imageType, message, time, completed} = props;
+  const { imageType, message, time, completed } = props
 
-  let timeAgo = getTime(time);
+  let timeAgo = getTime(time)
   return (
     <View
       style={[
@@ -36,7 +36,7 @@ const ASNotificationCard = (props: IASNotificationCardProps) => {
         <Text style={ASNotificationCardStyles.timeAgoText}>{timeAgo}</Text>
       </View>
     </View>
-  );
-};
+  )
+}
 
-export default ASNotificationCard;
+export default ASNotificationCard

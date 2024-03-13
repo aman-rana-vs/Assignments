@@ -1,21 +1,21 @@
-import React from 'react';
-import {View, Text, ImageBackground} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import React from 'react'
+import { ImageBackground, Text, View } from 'react-native'
+import LinearGradient from 'react-native-linear-gradient'
 
-import ASButton from '../button/ASButton';
-import {DActiveCardInfo} from '../../constants/dactive-constants';
+import { DActiveCardInfo } from '../../constants/dactive-constants'
+import ASButton from '../button/ASButton'
 
-import {ASDActiveCardStyles} from './asDActiveCard-styles';
-import {resizeMode} from '../../constants/common-constants';
-import {COLORS} from '../../theme/colors';
+import { resizeMode } from '../../constants/common-constants'
+import { COLORS } from '../../theme/colors'
+import { ASDActiveCardStyles } from './asDActiveCard-styles'
 
 interface ICardProps {
-  title: string;
-  image: string;
+  title: string
+  image: string
 }
 
 const ASDActiveCard = (props: ICardProps) => {
-  const {title, image} = props;
+  const { title, image } = props
   return (
     <View style={ASDActiveCardStyles.container}>
       <ImageBackground
@@ -42,7 +42,7 @@ const ASDActiveCard = (props: ICardProps) => {
         </LinearGradient>
       </ImageBackground>
     </View>
-  );
-};
+  )
+}
 
-export default ASDActiveCard;
+export default ASDActiveCard

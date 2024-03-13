@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { View, FlatList } from 'react-native'
+import { FlatList, View } from 'react-native'
 
-import { ID_ACTIVE } from '../../types/dactive-types'
 import DActiveCard from '../../components/dActive-card/ASDActiveCard'
 import ASHeader from '../../components/header/ASHeader'
+import { ID_ACTIVE } from '../../types/dactive-types'
 
 import { fetchDactiveData } from '../../services/api/get-dactive-data'
 

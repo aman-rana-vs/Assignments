@@ -1,9 +1,9 @@
-import {StyleSheet, ViewStyle} from 'react-native';
-import {SPACING} from '../../theme/spacing';
+import { StyleSheet, ViewStyle } from 'react-native'
+import { SPACING } from '../../theme/spacing'
 
 interface IASDActiveStyles {
-  container: ViewStyle;
-  listContainer: ViewStyle;
+  container: ViewStyle
+  listContainer: ViewStyle
 }
 export const ASDActiveStyles: IASDActiveStyles = StyleSheet.create({
   container: {
@@ -16,4 +16,4 @@ export const ASDActiveStyles: IASDActiveStyles = StyleSheet.create({
     paddingBottom: SPACING.space_20,
     width: SPACING.space_335,
   },
-});
+})
