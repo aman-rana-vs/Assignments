@@ -1,14 +1,10 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
-// English.
-import en from 'javascript-time-ago/locale/en';
-import TimeAgo from 'javascript-time-ago';
 
 import {images} from '../../constants/notifications-constants';
 
+import {getTime} from '../../utils/common-utils';
 import {cardStyles} from './NotificationCard-styles';
-
-TimeAgo.addDefaultLocale(en);
 
 interface ICardProps {
   imageType: string;
@@ -19,8 +15,8 @@ interface ICardProps {
 
 const NotificationCard = (props: ICardProps) => {
   const {imageType, message, time, completed} = props;
-  const timeAgo = new TimeAgo('en-US');
-  let timeStr = timeAgo.format(time);
+
+  let timeAgo = getTime(time);
   return (
     <View
       style={[
@@ -37,7 +33,7 @@ const NotificationCard = (props: ICardProps) => {
         </View>
       </View>
       <View style={cardStyles.timeAgoContainer}>
-        <Text style={cardStyles.timeAgoText}>{timeStr}</Text>
+        <Text style={cardStyles.timeAgoText}>{timeAgo}</Text>
       </View>
     </View>
   );

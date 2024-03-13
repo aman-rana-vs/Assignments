@@ -4,7 +4,7 @@ import Notifications from './src/screens/notifications/Notifications';
 import DActiveExercises from './src/screens/d-active exercises/DActiveExercises';
 
 const App = () => {
-  const showNotificationScreen = false;
+  const showNotificationScreen = true;
   return (
     <View style={{flex: 1, alignItems: 'center'}}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
