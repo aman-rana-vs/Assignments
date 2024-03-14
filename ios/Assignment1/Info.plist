@@ -26,14 +26,13 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -48,5 +47,121 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fraunces_144pt-Black.ttf</string>
+		<string>Fraunces_144pt-BlackItalic.ttf</string>
+		<string>Fraunces_144pt-Bold.ttf</string>
+		<string>Fraunces_144pt-BoldItalic.ttf</string>
+		<string>Fraunces_144pt-Italic.ttf</string>
+		<string>Fraunces_144pt-Light.ttf</string>
+		<string>Fraunces_144pt-LightItalic.ttf</string>
+		<string>Fraunces_144pt-Regular.ttf</string>
+		<string>Fraunces_144pt-SemiBold.ttf</string>
+		<string>Fraunces_144pt-SemiBoldItalic.ttf</string>
+		<string>Fraunces_144pt-Thin.ttf</string>
+		<string>Fraunces_144pt-ThinItalic.ttf</string>
+		<string>Fraunces_144pt_Soft-Black.ttf</string>
+		<string>Fraunces_144pt_Soft-BlackItalic.ttf</string>
+		<string>Fraunces_144pt_Soft-Bold.ttf</string>
+		<string>Fraunces_144pt_Soft-BoldItalic.ttf</string>
+		<string>Fraunces_144pt_Soft-Italic.ttf</string>
+		<string>Fraunces_144pt_Soft-Light.ttf</string>
+		<string>Fraunces_144pt_Soft-LightItalic.ttf</string>
+		<string>Fraunces_144pt_Soft-Regular.ttf</string>
+		<string>Fraunces_144pt_Soft-SemiBold.ttf</string>
+		<string>Fraunces_144pt_Soft-SemiBoldItalic.ttf</string>
+		<string>Fraunces_144pt_Soft-Thin.ttf</string>
+		<string>Fraunces_144pt_Soft-ThinItalic.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-Black.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-BlackItalic.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-Bold.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-BoldItalic.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-Italic.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-Light.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-LightItalic.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-Regular.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-SemiBold.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-SemiBoldItalic.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-Thin.ttf</string>
+		<string>Fraunces_144pt_SuperSoft-ThinItalic.ttf</string>
+		<string>Fraunces_72pt-Black.ttf</string>
+		<string>Fraunces_72pt-BlackItalic.ttf</string>
+		<string>Fraunces_72pt-Bold.ttf</string>
+		<string>Fraunces_72pt-BoldItalic.ttf</string>
+		<string>Fraunces_72pt-Italic.ttf</string>
+		<string>Fraunces_72pt-Light.ttf</string>
+		<string>Fraunces_72pt-LightItalic.ttf</string>
+		<string>Fraunces_72pt-Regular.ttf</string>
+		<string>Fraunces_72pt-SemiBold.ttf</string>
+		<string>Fraunces_72pt-SemiBoldItalic.ttf</string>
+		<string>Fraunces_72pt-Thin.ttf</string>
+		<string>Fraunces_72pt-ThinItalic.ttf</string>
+		<string>Fraunces_72pt_Soft-Black.ttf</string>
+		<string>Fraunces_72pt_Soft-BlackItalic.ttf</string>
+		<string>Fraunces_72pt_Soft-Bold.ttf</string>
+		<string>Fraunces_72pt_Soft-BoldItalic.ttf</string>
+		<string>Fraunces_72pt_Soft-Italic.ttf</string>
+		<string>Fraunces_72pt_Soft-Light.ttf</string>
+		<string>Fraunces_72pt_Soft-LightItalic.ttf</string>
+		<string>Fraunces_72pt_Soft-Regular.ttf</string>
+		<string>Fraunces_72pt_Soft-SemiBold.ttf</string>
+		<string>Fraunces_72pt_Soft-SemiBoldItalic.ttf</string>
+		<string>Fraunces_72pt_Soft-Thin.ttf</string>
+		<string>Fraunces_72pt_Soft-ThinItalic.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-Black.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-BlackItalic.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-Bold.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-BoldItalic.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-Italic.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-Light.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-LightItalic.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-Regular.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-SemiBold.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-SemiBoldItalic.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-Thin.ttf</string>
+		<string>Fraunces_72pt_SuperSoft-ThinItalic.ttf</string>
+		<string>Fraunces_9pt-Black.ttf</string>
+		<string>Fraunces_9pt-BlackItalic.ttf</string>
+		<string>Fraunces_9pt-Bold.ttf</string>
+		<string>Fraunces_9pt-BoldItalic.ttf</string>
+		<string>Fraunces_9pt-Italic.ttf</string>
+		<string>Fraunces_9pt-Light.ttf</string>
+		<string>Fraunces_9pt-LightItalic.ttf</string>
+		<string>Fraunces_9pt-Regular.ttf</string>
+		<string>Fraunces_9pt-SemiBold.ttf</string>
+		<string>Fraunces_9pt-SemiBoldItalic.ttf</string>
+		<string>Fraunces_9pt-Thin.ttf</string>
+		<string>Fraunces_9pt-ThinItalic.ttf</string>
+		<string>Fraunces_9pt_Soft-Black.ttf</string>
+		<string>Fraunces_9pt_Soft-BlackItalic.ttf</string>
+		<string>Fraunces_9pt_Soft-Bold.ttf</string>
+		<string>Fraunces_9pt_Soft-BoldItalic.ttf</string>
+		<string>Fraunces_9pt_Soft-Italic.ttf</string>
+		<string>Fraunces_9pt_Soft-Light.ttf</string>
+		<string>Fraunces_9pt_Soft-LightItalic.ttf</string>
+		<string>Fraunces_9pt_Soft-Regular.ttf</string>
+		<string>Fraunces_9pt_Soft-SemiBold.ttf</string>
+		<string>Fraunces_9pt_Soft-SemiBoldItalic.ttf</string>
+		<string>Fraunces_9pt_Soft-Thin.ttf</string>
+		<string>Fraunces_9pt_Soft-ThinItalic.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-Black.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-BlackItalic.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-Bold.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-BoldItalic.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-Italic.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-Light.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-LightItalic.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-Regular.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-SemiBold.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-SemiBoldItalic.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-Thin.ttf</string>
+		<string>Fraunces_9pt_SuperSoft-ThinItalic.ttf</string>
+		<string>Quicksand-Bold.ttf</string>
+		<string>Quicksand-Light.ttf</string>
+		<string>Quicksand-Medium.ttf</string>
+		<string>Quicksand-Regular.ttf</string>
+		<string>Quicksand-SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>
