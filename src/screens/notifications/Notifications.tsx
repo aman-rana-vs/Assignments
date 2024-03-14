@@ -4,9 +4,10 @@ import { View, FlatList } from 'react-native'
 import ASNotificationCard from '../../components/notification-card/ASNotificationCard'
 import ASHeader from '../../components/header/ASHeader'
 import EmptyNotification from '../../components/empty-data/ASEmptyData'
-
-import { INotification } from '../../types/notification-types'
 import { fetchNotificationData } from '../../services/api/get-notifications-data'
+import { INotification } from '../../types/notification-types'
+
+import { EMPTY_DATA } from '../../constants/notifications-constants'
 
 const renderFunction = (item: INotification): JSX.Element => {
   return (

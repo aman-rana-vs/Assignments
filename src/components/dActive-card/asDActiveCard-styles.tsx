@@ -1,25 +1,26 @@
-import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
+import { ImageStyle, StyleSheet, TextStyle, ViewStyle } from 'react-native'
 
-import {FONTS} from '../../theme/typography';
-import {COLORS} from '../../theme/colors';
-import {SPACING} from '../../theme/spacing';
+import { FONTS } from '../../theme/typography'
+import { COLORS } from '../../theme/colors'
+import { SPACING } from '../../theme/spacing'
 
 interface IASDActiveCardStyles {
-  container: ViewStyle;
-  backgroundImage: ImageStyle;
-  titleContainer: ViewStyle;
-  title: TextStyle;
-  buttonsContainer: ViewStyle;
-  outerRingText: TextStyle;
-  focusText: TextStyle;
-  followText: TextStyle;
-  scanText: TextStyle;
-  squareText: TextStyle;
+  container: ViewStyle
+  backgroundImage: ImageStyle
+  titleContainer: ViewStyle
+  title: TextStyle
+  buttonsContainer: ViewStyle
+  outerRingText: TextStyle
+  focusText: TextStyle
+  followText: TextStyle
+  scanText: TextStyle
+  squareText: TextStyle
 }
 export const ASDActiveCardStyles: IASDActiveCardStyles = StyleSheet.create({
   container: {
     borderRadius: SPACING.space_16,
     elevation: SPACING.space_5,
+    shadowColor: COLORS.black,
     height: SPACING.space_148,
     justifyContent: 'space-between',
     overflow: 'hidden',
@@ -64,4 +65,4 @@ export const ASDActiveCardStyles: IASDActiveCardStyles = StyleSheet.create({
   squareText: {
     color: COLORS.primary700,
   },
-});
+})

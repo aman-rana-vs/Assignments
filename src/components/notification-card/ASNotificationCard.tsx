@@ -1,9 +1,10 @@
 import React from 'react'
 import { Image, Text, View } from 'react-native'
 
+import { getTime } from '../../utils/common-utils'
+
 import { images } from '../../constants/notifications-constants'
 
-import { getTime } from '../../utils/common-utils'
 import { ASNotificationCardStyles } from './asNotificationCard-styles'
 
 interface IASNotificationCardProps {
@@ -14,7 +15,7 @@ interface IASNotificationCardProps {
 }
 
 const ASNotificationCard = (props: IASNotificationCardProps) => {
-  const { imageType, message, time, completed } = props
+  const { completed, imageType, message, time } = props
 
   let timeAgo = getTime(time)
   return (

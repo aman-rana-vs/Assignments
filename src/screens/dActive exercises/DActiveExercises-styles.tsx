@@ -8,7 +8,7 @@ interface IASDActiveStyles {
 export const ASDActiveStyles: IASDActiveStyles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    flex: 1,
+    flex: SPACING.space_1,
     gap: SPACING.space_10,
   },
   listContainer: {

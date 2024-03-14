@@ -1,13 +1,13 @@
-import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
+import { ImageStyle, StyleSheet, TextStyle, ViewStyle } from 'react-native'
 
-import {FONTS} from '../../theme/typography';
-import {COLORS} from '../../theme/colors';
-import {SPACING} from '../../theme/spacing';
+import { FONTS } from '../../theme/typography'
+import { COLORS } from '../../theme/colors'
+import { SPACING } from '../../theme/spacing'
 
 interface IASHeaderStyles {
-  container: ViewStyle;
-  heading: TextStyle;
-  settingsIcon: ImageStyle;
+  container: ViewStyle
+  heading: TextStyle
+  settingsIcon: ImageStyle
 }
 export const ASHeaderStyles: IASHeaderStyles = StyleSheet.create({
   container: {
@@ -25,11 +25,11 @@ export const ASHeaderStyles: IASHeaderStyles = StyleSheet.create({
     fontFamily: FONTS.FRAUNCES_BOLD,
     fontSize: SPACING.space_18,
     gap: SPACING.space_16,
-    lineHeight: 25.2,
+    lineHeight: SPACING.space_25,
     textAlign: 'center',
   },
   settingsIcon: {
     height: SPACING.space_24,
     width: SPACING.space_24,
   },
-});
+})
